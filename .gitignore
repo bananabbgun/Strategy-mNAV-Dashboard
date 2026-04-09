@@ -1,0 +1,12 @@
+.next
+node_modules
+.vercel
+out
+dist
+*.pyc
+__pycache__
+.env
+.env.local
+.env.development.local
+.env.production.local
+.venv_broken
