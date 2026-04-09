@@ -1,4 +1,4 @@
-# HW2 Report — MicroStrategy mNAV Dashboard
+# HW2 Report
 
 ## 1. Selected Indicator
 
@@ -102,4 +102,3 @@ The `/api/summary` route accepts the currently visible mNAV dataset (filtered by
 3. The relationship between BTC price and mNAV during the period.
 4. What the current mNAV level implies about market premium or discount expectations.
 
-The response is rendered in English. If `GEMINI_API_KEY` is not set, a rule-based fallback paragraph is returned instead, so the feature degrades gracefully.
