@@ -80,7 +80,7 @@ The output JSON (251 daily rows) is served as a static asset from the Next.js `p
 - **Dual-axis line chart** (Recharts): mNAV on the left axis, BTC/USD price on the right axis, both plotted over the same time range. A dashed reference line at mNAV = 1 marks the par value boundary.
 - **Time range filter**: 30D / 90D / 1Y / ALL, applied client-side.
 - **Key metrics cards**: Current mNAV, Range Change (%), BTC Holdings, Premium/Discount (%), BTC Price, MSTR Market Cap.
-- **AI-generated summary** (bonus): A button triggers a POST to `/api/summary`, which calls Gemini 2.0 Flash Lite with the visible data range and returns a 3–5 paragraph Traditional Chinese trend analysis. Falls back to a deterministic local summary if the API key is unavailable.
+- **AI-generated summary** (bonus): A button triggers a POST to `/api/summary`, which calls Gemini 2.5 Flash with the visible data range and returns a 3–5 paragraph trend analysis. Falls back to a deterministic local summary if the API key is unavailable.
 - **About section**: Plain-language explanation of what mNAV means.
 
 ### Tech stack
@@ -88,7 +88,7 @@ The output JSON (251 daily rows) is served as a static asset from the Next.js `p
 - **Framework**: Next.js 15 (App Router), TypeScript
 - **Styling**: Tailwind CSS 4
 - **Charting**: Recharts 2
-- **AI**: Google Gemini 2.0 Flash Lite via `@google/genai`
+- **AI**: Google Gemini 2.5 Flash via `@google/genai`
 - **Deployment**: Vercel
 
 ---
